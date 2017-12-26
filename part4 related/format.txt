@@ -1,0 +1,36 @@
+pvsinfo format:
+	0       1      2 3 4 5 6 7 8 9      10   11         12
+	batsman,bowler,0,1,2,3,4,5,6,balls,runs,strikerate,dismissals
+
+pinfo for batsman with cluster no:
+	#cluster,playername,team,bat,M,Inn,NO,Runs,HS,Avg,BF,SR,100,200,50,4s,6s (in file pinfobatcluster.csv)
+clusterinfo for batsman:
+	#cluster,M,Inn,NO,Runs,HS,Avg,BF,SR,100,200,50,4s,6s (ie this is the centroid data) (in file batclusterinfo.csv)
+
+pinfo for bowler with clusterno:
+	#cluster,playername,team,bowl,M,Inn,B,Runs,Wkts,BBIruns,BBIwckts,BBMruns,BBMwckts,Econ,Avg,SR,5W,10W	(in file pinfobowlcluster.csv)
+clusterinfo for bowler:
+	#cluster,M,Inn,B,Runs,Wkts,BBIruns,BBIwckts,BBMruns,BBMwckts,Econ,Avg,SR,5W,10W (ie this is the centroid data) (in file bowlclusterinfo.csv)
+
+finalmodifiedpvspinfo format:
+	batsman,bowler,0,1,2,3,4,5,6,balls,runs,strikerate,dismissals,batsmancluster#,bowlercluster#
+
+clustervsclusterstats format:
+	0                 1            2 3 4 5 6 7 8 9       10  11         12
+	batsmancluster#,bowlercluster#,0,1,2,3,4,5,6,balls,runs,strikerate,dismissals
+	
+clustervsclusterprobabilities format:
+	batsmancluster#,bowlercluster#,p0,p1,p2,p3,p4,p5,p6,pdismissals,balls
+	
+FinalTotalProbabilities format:
+	batsman,bowler,p0,p1,p2,p3,p4,p5,p6,pdismissals,balls
+	//some rare cases of intra team rows but when selecting make sure not to include them!
+	
+teaminfo format:
+	playername,team,bat
+	     (or)
+	playername,team,bowl,bowlstyle
+	
+	
+	
+(PS:use pinfobatcluster5.csv,pinfobowlcluster5.csv,batclusterinfo5.csv,bowlclusterinfo5.csv if you want to use 5 clusters for batsman and 5 clusters for bowlers else use the other files named without the "5").
