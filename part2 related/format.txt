@@ -1,0 +1,18 @@
+pvsinfo format:
+	0       1      2 3 4 5 6 7 8 9      10   11         12
+	batsman,bowler,0,1,2,3,4,5,6,balls,runs,strikerate,dismissals
+
+pinfo for batsman with cluster no:
+	#cluster,playername,team,bat,M,Inn,NO,Runs,HS,Avg,BF,SR,100,200,50,4s,6s (in file pinfobatcluster.csv)
+clusterinfo for batsman:
+	#cluster,M,Inn,NO,Runs,HS,Avg,BF,SR,100,200,50,4s,6s (ie this is the centroid data) (in file batclusterinfo.csv)
+
+pinfo for bowler with clusterno:
+	#cluster,playername,team,bowl,M,Inn,B,Runs,Wkts,BBIruns,BBIwckts,BBMruns,BBMwckts,Econ,Avg,SR,5W,10W	(in file pinfobowlcluster.csv)
+clusterinfo for bowler:
+	#cluster,M,Inn,B,Runs,Wkts,BBIruns,BBIwckts,BBMruns,BBMwckts,Econ,Avg,SR,5W,10W (ie this is the centroid data) (in file bowlclusterinfo.csv)
+
+files attached:
+1.python scripts which calculate kmeans clustering for batting and bowlers(kmeansbat.py,kmeansbowl.py)
+2.the batsman clusterfiles(batclusterinfo.csv,pinfobatcluster.csv)
+3.the bowler clusterfiles(bowlclusterinfo.csv,pinfobowlcluster.csv)
