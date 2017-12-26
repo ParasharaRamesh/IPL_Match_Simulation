@@ -1,0 +1,4 @@
+batsman,bowler,0,1,2,3,4,5,6,balls,runs,strikerate,dismissals
+
+playername,team,mode,M,Inn,NO,Runs,HS,Avg,BF,SR,100,200,50,4s,6s
+playername,team,mode,M,Inn,B,Runs,Wkts,BBI,BBM,Econ,Avg,SR,5W,10W

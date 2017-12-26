@@ -1,0 +1,5 @@
+batsman,bowler,0,1,2,3,4,5,6,balls,runs,strikerate,dismissals
+playername,team,bat,M,Inn,NO,Runs,HS,Avg,BF,SR,100,200,50,4s,6s
+playername,team,bowl,M,Inn,B,Runs,Wkts,BBIruns,BBIwckts,BBMruns,BBMwckts,Econ,Avg,SR,5W,10W
+
+(PS:download the ipl ball by ball csv data from cricsheets for the 2016 season)
